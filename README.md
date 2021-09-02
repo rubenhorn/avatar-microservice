@@ -1,5 +1,8 @@
 # Avatar microservice
-A microservice to store user profile pictures (avatars) corresponding to Firebase IdTokens in AWS S3.
+A microservice to store user profile pictures (avatars) corresponding to Firebase IdTokens in AWS S3.  
+Content is moderated through AWS Rekognition.
+
+Check `./app/constants.py` to change settings relating to the processing of user provided content.
 
 ## Environment variables
 * **FIREBASE_PROJECT_ID** The [Firebase project id](https://firebase.google.com/docs/projects/learn-more#project-id)

@@ -11,7 +11,7 @@ class AuthException(Exception):
     pass
 
 
-class FirebaseAuth(object):
+class FirebaseAuth:
     def __init__(self, project_id: str):
         assert(project_id is not None and project_id != '')
         self.project_id = project_id
